@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success Page</title>
+    <style>
+        .nav-bar{
+            background-color: rgb(52, 52, 53);
+            overflow: hidden;
+        }
+        .nav-bar a{
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        .nav-bar a.active {
+             background-color: #2f26e2;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="nav-bar">
+        <a class="active" href="/">registration</a>
+        <a href="/login">login</a>
+    </nav>
+    <p><b>Successful...!</b></p>
+    <br/>
+    <table style="width: 100%;">
+        <tr>
+            <th>Roll No</th>
+            <th>Name</th>
+        </tr>
+        <tr>
+            <td>{{roll}}</td>
+            <td>{{name}}</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <style>
+        .nav-bar{
+            background-color: rgb(52, 52, 53);
+            overflow: hidden;
+        }
+        .nav-bar a{
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        .nav-bar a.active {
+             background-color: #2f26e2;
+            color: white;
+        }
+
+    </style>
+</head>
+<body style="text-align: center;">
+    <nav class="nav-bar">
+        <a class="active" href="/">registration</a>
+        <a href="/login">login</a>
+    </nav>
+    <h1>Registration Form</h1>
+    <div>
+        <form action="/collect" method="POST">
+            <label><b>Roll No:</b></label>
+                <input type="text" name="roll" id="rollno" placeholder="Enter your Roll Number">
+            <br/><br/>
+            <label><b>Name:</b></label>
+                <input type="text" id="name" placeholder="Enter your Name" name="name"/>
+            <br/><br/>
+            <label><b>Password:</b></label>
+                <input type="password" name="pass" id="pass" placeholder="Enter password"/>
+            <br/><br/>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <span style="color: red;">{{result}}</span> 
+</body>
+</html>
